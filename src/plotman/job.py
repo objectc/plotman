@@ -112,7 +112,7 @@ class Job:
             assert 'create' == args[3]
             args_iter = iter(cmdline_argfix(args[4:]))
             for arg in args_iter:
-                val = None if arg in {'-e', '--nobitfield', '-h', '--help', '--override-k'} else next(args_iter)
+                val = None if arg in {'-x', '-e', '--nobitfield', '-h', '--help', '--override-k'} else next(args_iter)
                 if arg in {'-k', '--size'}:
                     self.k = val
                 elif arg in {'-r', '--num_threads'}:

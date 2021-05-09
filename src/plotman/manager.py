@@ -111,7 +111,8 @@ def maybe_start_new_plot(dir_cfg, sched_cfg, plotting_cfg):
                     '-u', str(plotting_cfg.n_buckets),
                     '-b', str(plotting_cfg.job_buffer),
                     '-t', tmpdir,
-                    '-d', dstdir ]
+                    '-d', dstdir,
+                    '-x']
             if plotting_cfg.e:
                 plot_args.append('-e')
             if plotting_cfg.farmer_pk is not None:
